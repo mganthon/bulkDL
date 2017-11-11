@@ -1,7 +1,7 @@
 # This is a script for bulk downloading files from websites
 clear;
-$baseURL =  "http://www.americanradiohistory.com/Archive-Modern-Electrics/"
-$destinationFolder = '.\Modern-Electrics'
+$baseURL =  "http://yourURLhere/folderOfInterest/"
+$destinationFolder = '.\Destination-Folder-Name'
 $source = Get-Content .\test.txt
 try {
 
@@ -29,6 +29,5 @@ for ($i=0; $i -lt $source.Length; $i++)
 
 }
 
-# check the source count
-
+# check the source count 
 Write-Host ("Source: " + $source.Length)
